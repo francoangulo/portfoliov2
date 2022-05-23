@@ -76,6 +76,7 @@ function Skills() {
             alignItems={"center"}
             position={"relative"}
             zIndex={0}
+            pb={{ base: "2rem" }}
         >
             <SectionTitle title="SKILLS" />
             <Stack

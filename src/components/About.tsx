@@ -15,6 +15,7 @@ function About() {
             bg="gray.100"
             alignItems={"center"}
             boxShadow={"lg"}
+            pb={{ base: "2rem" }}
         >
             <SectionTitle title="ABOUT ME" />
 

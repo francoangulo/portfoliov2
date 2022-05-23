@@ -48,7 +48,7 @@ function SkillsSet({ skills, type }: { skills: any; type: string }) {
                 w={"100%"}
                 mt={"0 !important"}
                 justifyContent={{ lg: "flex-start" }}
-                alignItems={{ base: "center", lg: "flex-start" }}
+                alignItems={"center"}
                 pr={{ base: "0", lg: "2.5rem" }}
                 pb={{ base: "2.5rem", lg: "0" }}
             >
