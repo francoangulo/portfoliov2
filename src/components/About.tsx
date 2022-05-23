@@ -2,6 +2,7 @@ import { Image, Stack, Text, Link, Button } from "@chakra-ui/react";
 import React from "react";
 import profile from "../assets/profile.png";
 import resume from "../assets/FrancoAngulo.pdf";
+import certificate from "../assets/certificate.pdf";
 import SectionTitle from "./SectionTitle";
 
 function About() {
