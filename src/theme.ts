@@ -6,6 +6,7 @@ const colors = {
     primary: "#fff",
     accent: "#000",
     paramount: "#0F0D17",
+    darkGray: "#313133",
 };
 
 const fonts = {

@@ -82,6 +82,14 @@ code {
 .solidbuttonfillbottom:hover {
     box-shadow: inset 0px -80px 0px #b794f4;
 }
+.outlinecomputerfillbottom {
+    box-shadow: inset 0px 0px 0px #1b1b1b;
+    transition: all 0.5s !important;
+}
+
+.outlinecomputerfillbottom:hover {
+    box-shadow: inset 0px -80px 0px #1b1b1b;
+}
 .outlinebuttonfillbottom {
     box-shadow: inset 0px 0px 0px #e9d8fd;
     transition: all 0.5s !important;
