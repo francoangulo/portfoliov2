@@ -67,7 +67,6 @@ function Home() {
                         zIndex={0}
                     />
                     <Image
-                        borderRadius={"10px"}
                         boxShadow={"xl"}
                         display={{ base: "flex", md: "none" }}
                         src={phone}
