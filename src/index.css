@@ -49,3 +49,44 @@ code {
 ::-webkit-scrollbar-corner {
     background: transparent;
 }
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #b794f4;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #b794f4;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.solidbuttonfillbottom {
+    box-shadow: inset 0px 0px 0px #b794f4;
+    transition: all 0.5s !important;
+}
+
+.solidbuttonfillbottom:hover {
+    box-shadow: inset 0px -80px 0px #b794f4;
+}
+.outlinebuttonfillbottom {
+    box-shadow: inset 0px 0px 0px #e9d8fd;
+    transition: all 0.5s !important;
+}
+
+.outlinebuttonfillbottom:hover {
+    box-shadow: inset 0px -80px 0px #e9d8fd;
+}

@@ -5,7 +5,8 @@ import stripe from "../assets/stripe.png";
 function SkillsSet({ skills, type }: { skills: any; type: string }) {
     return (
         <Stack
-            flexDir={"row"}
+            id="skillset"
+            flexDir={{ base: "column", lg: "row" }}
             w={"fit-content"}
             h={"fit-content"}
             position={"relative"}
@@ -17,13 +18,13 @@ function SkillsSet({ skills, type }: { skills: any; type: string }) {
                 w={"100%"}
                 h={"100%"}
                 position={"absolute"}
-                flexDir={"row"}
+                flexDir={{ base: "column", lg: "row" }}
                 alignItems={"center"}
             >
                 <Stack
                     id="stripe"
-                    w={"100%"}
-                    h={"5px"}
+                    w={{ base: "5px", lg: "100%" }}
+                    h={{ base: "100%", lg: "5px" }}
                     bg={"purple.200"}
                     //   position={"absolute"}
                     top={"52%"}
@@ -42,27 +43,18 @@ function SkillsSet({ skills, type }: { skills: any; type: string }) {
                 />
             </Stack>
 
-            {/* <Image
-                mt={"0 !important"}
-                src={stripe}
-                position={"absolute"}
-                w={"100%"}
-                h={"18px"}
-                top={"46%"}
-                zIndex={-1}
-                left={0}
-            /> */}
             <Stack
-                flexDir={"row"}
+                flexDir={{ base: "column", lg: "row" }}
                 w={"100%"}
                 mt={"0 !important"}
                 justifyContent={"flex-start"}
-                pr={"2.5rem"}
+                pr={{ base: "0", lg: "2.5rem" }}
+                pb={{ base: "2.5rem", lg: "0" }}
             >
                 <Stack
-                    w={"15vw"}
+                    w={{ base: "100%", lg: "15vw" }}
                     justifyContent={"center"}
-                    alignItems={"flex-start"}
+                    alignItems={{ base: "center", lg: "flex-start" }}
                     mt={"0 !important"}
                 >
                     <Text
@@ -75,12 +67,12 @@ function SkillsSet({ skills, type }: { skills: any; type: string }) {
                 </Stack>
                 <Stack
                     w={"fit-content"}
-                    flexDir={"row"}
+                    flexDir={{ base: "column", lg: "row" }}
                     justifyContent={"flex-start"}
                     columnGap={"3rem"}
                     mt={"0 !important"}
-                    pr={"3rem"}
-                    wrap={"wrap"}
+                    pr={{ base: "0", lg: "3rem" }}
+                    wrap={{ base: "nowrap", lg: "wrap" }}
                     rowGap={"2rem"}
                 >
                     {skills.map((tool: any) => (
@@ -99,6 +91,8 @@ function SkillsSet({ skills, type }: { skills: any; type: string }) {
                                 h={"90px"}
                                 boxShadow={"lg"}
                                 bg={"white"}
+                                _hover={{ boxShadow: "2xl" }}
+                                transition={"all .3s"}
                             >
                                 <Image
                                     src={tool.logo}

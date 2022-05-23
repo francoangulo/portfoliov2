@@ -96,6 +96,7 @@ function ContactForm() {
                     />
                 </FormControl>
                 <Button
+                    className="solidbuttonfillbottom"
                     type="submit"
                     bg={"purple.200"}
                     borderRadius={"full"}

@@ -75,17 +75,19 @@ function Skills() {
             boxShadow={"lg"}
             alignItems={"center"}
             position={"relative"}
-            zIndex={-1}
+            zIndex={0}
         >
             <SectionTitle title="SKILLS" />
             <Stack
                 w={"100%"}
                 h={"100%"}
-                p={"1rem 7rem 4rem 7rem"}
+                p={{ base: "1rem 3rem", lg: "1rem 7rem 4rem 7rem" }}
                 wrap={"wrap"}
                 alignItems={"flex-start"}
                 justifyContent={"center"}
                 rowGap={"2.5rem"}
+                columnGap={"3rem"}
+                flexDir={{ base: "row", lg: "column" }}
             >
                 <SkillsSet skills={front} type="Frontend" />
                 <SkillsSet skills={back} type="Backend" />

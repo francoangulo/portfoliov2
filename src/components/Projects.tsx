@@ -29,7 +29,7 @@ function Projects() {
         >
             <SectionTitle title="PROJECTS" />
             <Stack
-                p={"2rem 7rem 2rem 7rem"}
+                p={{ base: "2rem 3rem", lg: "2rem 7rem 2rem 7rem" }}
                 flexDir={"row"}
                 justifyContent={"center"}
                 columnGap={"3rem"}
@@ -55,8 +55,8 @@ function Projects() {
                 w={{ base: "auto", lg: "fit-content" }}
                 h={{ base: "fit-content", lg: "auto" }}
                 position={"fixed"}
-                bottom={0}
-                right={0}
+                bottom={{ base: -40, lg: -10 }}
+                right={{ base: -20, lg: -10 }}
                 zIndex={-1}
             />
         </Stack>

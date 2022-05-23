@@ -11,10 +11,9 @@ function About() {
             mt="0 !important"
             id="about"
             minH={"100vh"}
-            maxH={"100vh"}
+            maxH={"fit-content"}
             bg="gray.100"
             alignItems={"center"}
-            // justifyContent={"center"}
             boxShadow={"lg"}
         >
             <SectionTitle title="ABOUT ME" />
@@ -22,18 +21,19 @@ function About() {
             <Stack
                 w={"100%"}
                 h={"100%"}
-                p={"2rem 7rem 4rem 7rem"}
+                p={{ base: "1rem 3rem", lg: "2rem 7rem 4rem 7rem" }}
                 mt="0 !important"
             >
-                <Stack flexDir={"row"} h={"100%"}>
+                <Stack flexDir={{ base: "column", lg: "row" }} h={"100%"}>
                     <Stack
-                        w={"30%"}
+                        w={{ base: "100%", lg: "30%" }}
                         minH={"100%"}
                         id="aboutPicCont"
                         justifyContent={"center"}
                         userSelect={"none"}
                     >
                         <Image
+                            boxShadow={"2xl"}
                             src={profile}
                             h={"100%"}
                             objectFit={"cover"}
@@ -42,15 +42,15 @@ function About() {
                         />
                     </Stack>
                     <Stack
-                        w={"70%"}
+                        w={{ base: "100%", lg: "70%" }}
                         id="aboutDescCont"
                         alignItems={"center"}
-                        mt="0 !important"
+                        mt={{ base: "2rem !important", lg: "0 !important" }}
                         rowGap={"2rem"}
                         minH={"100%"}
                     >
                         <Text
-                            w={"70%"}
+                            w={{ base: "100%", lg: "70%" }}
                             fontSize={"1.2rem"}
                             textAlign={"justify"}
                         >
@@ -70,7 +70,7 @@ function About() {
                         </Text>
                         <Stack
                             flexDir={"row"}
-                            w={"70%"}
+                            w={{ base: "100%", lg: "70%" }}
                             justifyContent={"space-evenly"}
                             userSelect={"none"}
                         >
@@ -80,6 +80,7 @@ function About() {
                                 target={"_blank"}
                             >
                                 <Button
+                                    className="solidbuttonfillbottom"
                                     _hover={{ bg: "purple.300" }}
                                     bg={"purple.200"}
                                     color={"paramount"}
@@ -99,6 +100,7 @@ function About() {
                                 target={"_blank"}
                             >
                                 <Button
+                                    className="outlinebuttonfillbottom"
                                     borderRadius={"full"}
                                     _focus={{ outline: "none" }}
                                     fontWeight={"bold"}
