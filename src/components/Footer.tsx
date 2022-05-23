@@ -19,7 +19,7 @@ function Footer() {
                     src={logo}
                     w={{ base: "10vw", md: "6vw", lg: "4.5vw" }}
                 />
-                <Text>© Copyright Franco Angulo 2022</Text>
+                <Text>© 2022 Franco Angulo ALL RIGHTS RESERVED</Text>
             </Stack>
             <Stack flexDir={"row"}>
                 <Link
