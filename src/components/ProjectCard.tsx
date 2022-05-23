@@ -133,8 +133,8 @@ function ProjectCard({ data }: { data: any }) {
                 <Stack pt={10} align={"center"}>
                     <Heading
                         fontSize={"2xl"}
-                        fontFamily={"body"}
-                        fontWeight={500}
+                        fontFamily={"raleway"}
+                        fontWeight={"bold"}
                     >
                         {data.name}
                     </Heading>
@@ -143,7 +143,10 @@ function ProjectCard({ data }: { data: any }) {
                         align={"center"}
                         mt={"1rem !important"}
                     >
-                        <Text textAlign={"justify"} fontSize={"1rem"}>
+                        <Text
+                            textAlign={"justify"}
+                            fontSize={{ base: ".9rem", md: "1rem" }}
+                        >
                             {data.description}
                         </Text>
                     </Stack>

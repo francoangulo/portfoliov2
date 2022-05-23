@@ -52,7 +52,7 @@ function About() {
                     >
                         <Text
                             w={{ base: "100%", lg: "70%" }}
-                            fontSize={"1.2rem"}
+                            fontSize={{ base: ".9rem", md: "1.2rem" }}
                             textAlign={"justify"}
                         >
                             The world of programming fascinates me. I always
