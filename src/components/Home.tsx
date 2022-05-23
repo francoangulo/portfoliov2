@@ -12,6 +12,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { Typewriter, useTypewriter, Cursor } from "react-simple-typewriter";
 import computer from "../assets/computer.png";
+import phone from "../assets/phone.png";
 
 function Home() {
     const { text } = useTypewriter({
@@ -55,10 +56,20 @@ function Home() {
                     color={"white"}
                     id="imagecontainer"
                     position={"relative"}
+                    alignItems={"center"}
                 >
                     <Image
+                        display={{ base: "none", md: "flex" }}
                         src={computer}
                         w={"fit-content"}
+                        top={"0"}
+                        left={"0"}
+                        zIndex={0}
+                    />
+                    <Image
+                        display={{ base: "flex", md: "none" }}
+                        src={phone}
+                        w={"60%"}
                         top={"0"}
                         left={"0"}
                         zIndex={0}
@@ -68,16 +79,13 @@ function Home() {
                         h={"100%"}
                         position={"absolute"}
                         color={"white"}
-                        pl={"15%"}
-                        pr={"15%"}
-                        pt={"5.8%"}
-                        pb={"10%"}
+                        p={{ base: "15% 25%", md: "5.8% 15% 10% 15%" }}
                         justifyContent={"space-between"}
                     >
                         <Text
                             userSelect={"none"}
                             flexDir={"row"}
-                            fontSize={{ base: "2xl", md: "4xl" }}
+                            fontSize={{ base: "xl", md: "4xl" }}
                             fontWeight={"bold"}
                             textAlign={"start"}
                         >
