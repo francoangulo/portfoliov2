@@ -61,7 +61,7 @@ function Home() {
                     <Image
                         display={{ base: "none", md: "flex" }}
                         src={computer}
-                        w={"fit-content"}
+                        w={{ md: "fit-content", lg: "70vw" }}
                         top={"0"}
                         left={"0"}
                         zIndex={0}

@@ -104,6 +104,7 @@ function ContactForm() {
                     mt={"1rem"}
                     color={"paramount"}
                     _hover={{ bg: "purple.300" }}
+                    _focus={{ outline: "none" }}
                 >
                     Send Message
                 </Button>

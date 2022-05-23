@@ -32,11 +32,14 @@ function About() {
                         id="aboutPicCont"
                         justifyContent={"center"}
                         userSelect={"none"}
+                        alignItems={"center"}
                     >
                         <Image
+                            id="profileimage"
                             boxShadow={"2xl"}
                             src={profile}
-                            h={"100%"}
+                            h={{ lg: "100%" }}
+                            w={{ sm: "80%", lg: "auto" }}
                             objectFit={"cover"}
                             bg="purple.200"
                             borderRadius={"20%"}
@@ -53,21 +56,17 @@ function About() {
                         <Text
                             w={{ base: "100%", lg: "70%" }}
                             fontSize={{ base: ".9rem", md: "1.2rem" }}
-                            textAlign={"justify"}
+                            textAlign={"start"}
                         >
+                            My name is Franco and I'm a{" "}
+                            <b>Fullstack Web Developer</b>. I enjoy working on
+                            both sides, both <b>Frontend</b> and <b>Backend</b>.
                             The world of programming fascinates me. I always
                             seek to learn and I love the idea of being able to
                             live from what I am passionate about. This is why I
                             trained as a Full Stack Developer. Always
                             responsible, well predisposed and committed to my
-                            tasks. Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Nulla maiores labore corrupti
-                            fugiat sed magnam ea soluta id repudiandae eius est
-                            aliquid, ipsa, a consequuntur eligendi harum quod
-                            impedit reprehenderit! Maiores libero nobis in
-                            natus, qui minima totam consequuntur nisi ipsa harum
-                            non provident amet quasi, molestiae, ea tempore
-                            eaque aliquid
+                            tasks.
                         </Text>
                         <Stack
                             flexDir={"row"}

@@ -13,7 +13,7 @@ function SkillsSet({ skills, type }: { skills: any; type: string }) {
             mt={"0 !important"}
         >
             <Stack
-                pt={"1rem"}
+                pt={{ base: "2rem", lg: "1rem" }}
                 zIndex={-1}
                 w={"100%"}
                 h={"100%"}
@@ -26,14 +26,12 @@ function SkillsSet({ skills, type }: { skills: any; type: string }) {
                     w={{ base: "5px", lg: "100%" }}
                     h={{ base: "100%", lg: "5px" }}
                     bg={"purple.200"}
-                    //   position={"absolute"}
                     top={"52%"}
                 />
 
                 <Stack
                     id="ball"
                     bg={"purple.200"}
-                    //   position={"absolute"}
                     top={"46%"}
                     right={0}
                     w={"20px"}

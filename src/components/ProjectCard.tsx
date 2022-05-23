@@ -144,7 +144,7 @@ function ProjectCard({ data }: { data: any }) {
                         mt={"1rem !important"}
                     >
                         <Text
-                            textAlign={"justify"}
+                            textAlign={"center"}
                             fontSize={{ base: ".9rem", md: "1rem" }}
                         >
                             {data.description}

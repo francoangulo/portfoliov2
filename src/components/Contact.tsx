@@ -11,7 +11,6 @@ function Contact() {
             <SectionTitle title="CONTACT ME" />
             <Stack
                 p={{ base: "1rem 2rem", lg: "1rem 7rem 1rem 7rem" }}
-                //     flexDir={"row"}
                 alignItems={"center"}
                 justifyContent={"center"}
             >
@@ -35,6 +34,7 @@ function Contact() {
                             borderRadius={"full"}
                             bg={"purple.200"}
                             color={"black"}
+                            _focus={{ outline: "none" }}
                         />
                     </Link>
                     <Link
@@ -52,6 +52,7 @@ function Contact() {
                             borderRadius={"full"}
                             bg={"purple.200"}
                             color={"black"}
+                            _focus={{ outline: "none" }}
                         />
                     </Link>
                     <Link
@@ -69,6 +70,7 @@ function Contact() {
                             borderRadius={"full"}
                             bg={"purple.200"}
                             color={"black"}
+                            _focus={{ outline: "none" }}
                         />
                     </Link>
                 </Stack>

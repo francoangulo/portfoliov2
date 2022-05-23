@@ -1,5 +1,6 @@
-import { Link, Stack } from "@chakra-ui/react";
+import { Image, Link, Stack } from "@chakra-ui/react";
 import React from "react";
+import logo from "../assets/logo.svg";
 
 function Navbar() {
     return (
@@ -18,6 +19,16 @@ function Navbar() {
             alignItems={"center"}
         >
             <Link
+                href="#home"
+                mt={"0 !important"}
+                position={"absolute"}
+                left={10}
+                display={{ base: "none", md: "flex" }}
+            >
+                <Image src={logo} w={"40px"} />
+            </Link>
+            <Link
+                mt={"0 !important"}
                 href="#home"
                 fontWeight={"bold"}
                 _hover={{ textDecor: "none" }}
