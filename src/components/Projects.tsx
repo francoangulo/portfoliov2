@@ -27,7 +27,7 @@ function Projects() {
             pt={"10vh"}
             position={"relative"}
         >
-            <SectionTitle title="PROJECTS" />
+            <SectionTitle title="MY PROJECTS" />
             <Stack
                 p={{ base: "2rem 3rem", lg: "2rem 7rem 2rem 7rem" }}
                 flexDir={"row"}

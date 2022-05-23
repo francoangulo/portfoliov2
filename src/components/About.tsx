@@ -64,7 +64,7 @@ function About() {
                         >
                             My name is Franco and I am a{" "}
                             <b>Fullstack Web Developer</b>. Although I enjoy
-                            working on both sides, both <b>Frontend</b> and{" "}
+                            working on both sides, <b>Frontend</b> and{" "}
                             <b>Backend</b>, I feel a bit more comfortable on the{" "}
                             <b>Frontend</b> side. I am fascinated by the world
                             of programming, I am a proactive person who is

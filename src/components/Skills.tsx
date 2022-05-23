@@ -89,7 +89,7 @@ function Skills() {
             zIndex={0}
             pb={{ base: "2rem" }}
         >
-            <SectionTitle title="SKILLS" />
+            <SectionTitle title="MY SKILLS" />
             <Stack
                 w={"100%"}
                 h={"100%"}
