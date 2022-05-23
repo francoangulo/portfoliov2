@@ -115,16 +115,19 @@ function ProjectCard({ data }: { data: any }) {
                                     rowGap={"3px"}
                                     columnGap={"3px"}
                                 >
-                                    {data.techstack.map((tech: string) => (
-                                        <Tag
-                                            fontWeight={"bold"}
-                                            colorScheme={"whiteAlpha"}
-                                            mt={"0 !important"}
-                                            size={"sm"}
-                                        >
-                                            {tech}
-                                        </Tag>
-                                    ))}
+                                    {data.techstack.map(
+                                        (tech: string, index: number) => (
+                                            <Tag
+                                                key={`${index}${tech}`}
+                                                fontWeight={"bold"}
+                                                colorScheme={"whiteAlpha"}
+                                                mt={"0 !important"}
+                                                size={"sm"}
+                                            >
+                                                {tech}
+                                            </Tag>
+                                        )
+                                    )}
                                 </Stack>
                             </Stack>
                         </Box>

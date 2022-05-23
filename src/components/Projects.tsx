@@ -17,8 +17,6 @@ function Projects() {
             });
     }, []);
 
-    console.log(projects);
-
     return (
         <Stack
             minH={"100vh"}
@@ -39,7 +37,12 @@ function Projects() {
                 {projects.length &&
                     projects
                         .sort((a, b) => b.id - a.id)
-                        .map((project) => <ProjectCard data={project} />)}
+                        .map((project) => (
+                            <ProjectCard
+                                key={`${project.id}${project.name}`}
+                                data={project}
+                            />
+                        ))}
             </Stack>
             <Image
                 src={background}

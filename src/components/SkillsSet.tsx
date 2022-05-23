@@ -75,8 +75,9 @@ function SkillsSet({ skills, type }: { skills: any; type: string }) {
                     wrap={{ base: "nowrap", lg: "wrap" }}
                     rowGap={"2rem"}
                 >
-                    {skills.map((tool: any) => (
+                    {skills.map((tool: any, index: number) => (
                         <Stack
+                            key={`${index}${tool.name}`}
                             mt={"0 !important"}
                             w={"fit-content"}
                             h={"fit-content"}

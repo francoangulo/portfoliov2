@@ -14,7 +14,7 @@ function App() {
         <Stack className="App" fontFamily={"raleway"}>
             <Navbar />
             <Home />
-            <About />
+            <About data-aos="fade-up" />
             <Projects />
             <Skills />
             <Contact />
