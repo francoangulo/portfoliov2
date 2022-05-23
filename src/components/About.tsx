@@ -10,8 +10,8 @@ function About() {
             pt={"10vh"}
             mt="0 !important"
             id="about"
-            minH={"100vh"}
-            maxH={"fit-content"}
+            h={"100vh"}
+            // minH={"100vh"}
             bg="gray.100"
             alignItems={"center"}
             boxShadow={"lg"}
@@ -20,12 +20,13 @@ function About() {
             <SectionTitle title="ABOUT ME" />
 
             <Stack
+                id="eldelpadding"
                 w={"100%"}
                 h={"100%"}
-                p={{ base: "1rem 3rem", lg: "2rem 7rem 4rem 7rem" }}
+                p={{ base: "1rem 3rem", lg: "2rem 7rem 2rem 7rem" }}
                 mt="0 !important"
             >
-                <Stack flexDir={{ base: "column", lg: "row" }} h={"100%"}>
+                <Stack flexDir={{ base: "column", lg: "row" }} minH={"100%"}>
                     <Stack
                         w={{ base: "100%", lg: "30%" }}
                         minH={"100%"}
@@ -54,19 +55,28 @@ function About() {
                         minH={"100%"}
                     >
                         <Text
+                            lineHeight={"2rem"}
+                            h={"100%"}
                             w={{ base: "100%", lg: "70%" }}
                             fontSize={{ base: ".9rem", md: "1.2rem" }}
                             textAlign={"start"}
                         >
-                            My name is Franco and I'm a{" "}
-                            <b>Fullstack Web Developer</b>. I enjoy working on
-                            both sides, both <b>Frontend</b> and <b>Backend</b>.
-                            The world of programming fascinates me. I always
-                            seek to learn and I love the idea of being able to
-                            live from what I am passionate about. This is why I
-                            trained as a Full Stack Developer. Always
+                            My name is Franco and I am a{" "}
+                            <b>Fullstack Web Developer</b>. Although I enjoy
+                            working on both sides, both <b>Frontend</b> and{" "}
+                            <b>Backend</b>, I feel a bit more comfortable on the{" "}
+                            <b>Frontend</b> side. I am fascinated by the world
+                            of programming, I am a proactive person who is
+                            always looking to learn and grow, both
+                            professionally and personally. I feel identified
+                            with a phrase that I read and share:{" "}
+                            <i>
+                                "Nothing in the world can take the place of
+                                perseverance."
+                            </i>
+                            <br />I characterize myself for always being
                             responsible, well predisposed and committed to my
-                            tasks.
+                            tasks, and easy to adapt to new work teams.
                         </Text>
                         <Stack
                             flexDir={"row"}
