@@ -1,4 +1,4 @@
-import { Box, Image, Stack, Text } from "@chakra-ui/react";
+import { Box, Image, Stack, Tag, Text } from "@chakra-ui/react";
 import React from "react";
 import stripe from "../assets/stripe.png";
 
@@ -47,7 +47,8 @@ function SkillsSet({ skills, type }: { skills: any; type: string }) {
                 flexDir={{ base: "column", lg: "row" }}
                 w={"100%"}
                 mt={"0 !important"}
-                justifyContent={"flex-start"}
+                justifyContent={{ lg: "flex-start" }}
+                alignItems={{ base: "center", lg: "flex-start" }}
                 pr={{ base: "0", lg: "2.5rem" }}
                 pb={{ base: "2.5rem", lg: "0" }}
             >
@@ -69,6 +70,7 @@ function SkillsSet({ skills, type }: { skills: any; type: string }) {
                     w={"fit-content"}
                     flexDir={{ base: "column", lg: "row" }}
                     justifyContent={"flex-start"}
+                    alignItems={{ base: "center", lg: "flex-start" }}
                     columnGap={"3rem"}
                     mt={"0 !important"}
                     pr={{ base: "0", lg: "3rem" }}
@@ -80,6 +82,7 @@ function SkillsSet({ skills, type }: { skills: any; type: string }) {
                             mt={"0 !important"}
                             w={"fit-content"}
                             h={"fit-content"}
+                            alignItems={{ base: "center" }}
                         >
                             <Box
                                 mt={"0 !important"}
@@ -87,8 +90,8 @@ function SkillsSet({ skills, type }: { skills: any; type: string }) {
                                 justifyContent={"center"}
                                 alignItems={"center"}
                                 display={"flex"}
-                                w={"90px"}
-                                h={"90px"}
+                                w={{ base: "65px", lg: "90px" }}
+                                h={{ base: "65px", lg: "90px" }}
                                 boxShadow={"lg"}
                                 bg={"white"}
                                 _hover={{ boxShadow: "2xl" }}
@@ -96,11 +99,11 @@ function SkillsSet({ skills, type }: { skills: any; type: string }) {
                             >
                                 <Image
                                     src={tool.logo}
-                                    w={"50px"}
+                                    w={{ base: "35px", lg: "50px" }}
                                     borderRadius={"10%"}
                                 />
                             </Box>
-                            <Text>{tool.name}</Text>
+                            <Tag colorScheme={"purple"}>{tool.name}</Tag>
                         </Stack>
                     ))}
                 </Stack>

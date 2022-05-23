@@ -8,7 +8,7 @@ function Contact() {
         <Stack id="contact" minH={"100vh"} pt={"10vh"}>
             <SectionTitle title="CONTACT ME" />
             <Stack
-                p={"2rem 7rem 4rem 7rem"}
+                p={{ base: "1rem 2rem", lg: "2rem 7rem 4rem 7rem" }}
                 flexDir={"row"}
                 alignItems={"center"}
                 justifyContent={"center"}

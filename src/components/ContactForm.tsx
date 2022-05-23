@@ -56,7 +56,7 @@ function ContactForm() {
     };
     return (
         <Stack
-            w={"70%"}
+            w={{ base: "100%", lg: "70%" }}
             boxShadow={"lg"}
             p={"2rem"}
             rounded={"lg"}

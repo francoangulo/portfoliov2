@@ -13,7 +13,7 @@ function Navbar() {
             top={"0"}
             zIndex={3}
             flexDir={"row"}
-            columnGap={"1.5rem"}
+            columnGap={{ base: ".5rem", lg: "1.5rem" }}
             justifyContent={"center"}
             alignItems={"center"}
         >

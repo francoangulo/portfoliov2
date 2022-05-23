@@ -81,12 +81,12 @@ function Skills() {
             <Stack
                 w={"100%"}
                 h={"100%"}
-                p={{ base: "1rem 3rem", lg: "1rem 7rem 4rem 7rem" }}
+                p={{ base: "1rem 1.5rem", lg: "1rem 7rem 4rem 7rem" }}
                 wrap={"wrap"}
                 alignItems={"flex-start"}
                 justifyContent={"center"}
                 rowGap={"2.5rem"}
-                columnGap={"3rem"}
+                columnGap={"2rem"}
                 flexDir={{ base: "row", lg: "column" }}
             >
                 <SkillsSet skills={front} type="Frontend" />

@@ -62,7 +62,7 @@ function ProjectCard({ data }: { data: any }) {
                             top={0}
                             position={"absolute"}
                             h={210}
-                            w={282}
+                            w={{ base: "100%", lg: 282 }}
                             bg={"blackAlpha.600"}
                             opacity={0}
                             transition="all .3s"
