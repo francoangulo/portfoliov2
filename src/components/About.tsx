@@ -10,8 +10,8 @@ function About() {
             pt={"10vh"}
             mt="0 !important"
             id="about"
-            h={"100vh"}
-            // minH={"100vh"}
+            minH={"100vh"}
+            h={"fit-content"}
             bg="gray.100"
             alignItems={"center"}
             boxShadow={"lg"}
