@@ -12,7 +12,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { Typewriter, useTypewriter, Cursor } from "react-simple-typewriter";
 import computer from "../assets/computer.png";
-import phone from "../assets/phone.png";
+import phone from "../assets/phone2.png";
 
 function Home() {
     const { text } = useTypewriter({
@@ -67,9 +67,11 @@ function Home() {
                         zIndex={0}
                     />
                     <Image
+                        borderRadius={"10px"}
+                        boxShadow={"xl"}
                         display={{ base: "flex", md: "none" }}
                         src={phone}
-                        w={"60%"}
+                        h={"80vh"}
                         top={"0"}
                         left={"0"}
                         zIndex={0}
@@ -79,7 +81,7 @@ function Home() {
                         h={"100%"}
                         position={"absolute"}
                         color={"white"}
-                        p={{ base: "15% 25%", md: "5.8% 15% 10% 15%" }}
+                        p={{ base: "22% 10%", md: "5.8% 15% 10% 15%" }}
                         justifyContent={"space-between"}
                     >
                         <Text
@@ -118,7 +120,7 @@ function Home() {
                             justifyContent={"space-evenly"}
                             justifySelf={"flex-end"}
                             alignSelf={"flex-end"}
-                            display={{ base: "none", sm: "flex" }}
+                            //     display={{ base: "none", sm: "flex" }}
                         >
                             <Link
                                 href="https://www.linkedin.com/in/franco-angulo/"
