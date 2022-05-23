@@ -34,8 +34,6 @@ function Home() {
             alignItems={"flex-start"}
             justifyContent={{ base: "flex-start", lg: "center" }}
             p={"7rem"}
-            // pl={{ base: "4rem", lg: "9rem" }}
-            // pr={{ base: "4rem", lg: "7rem" }}
             position={"relative"}
             mt={"0 !important"}
         >
@@ -48,8 +46,8 @@ function Home() {
                 mt="0 !important"
                 justifyContent={"center"}
                 alignItems={"center"}
-                p={"3rem 3rem 0 3rem"}
                 bg={"whiteAlpha.700"}
+                p={{ base: "3rem 1rem", md: "3rem 3rem 0 3rem" }}
             >
                 <Stack
                     w={"fit-content"}
@@ -81,7 +79,6 @@ function Home() {
                             flexDir={"row"}
                             fontSize={{ base: "2xl", md: "4xl" }}
                             fontWeight={"bold"}
-                            className="animate__animated animate__bounce"
                             textAlign={"start"}
                         >
                             {">"} Hey 👋 I'm Franco, <br />
@@ -120,7 +117,21 @@ function Home() {
                                 target={"_blank"}
                                 _hover={{ textDecor: "none" }}
                             >
+                                <IconButton
+                                    display={{ base: "flex", md: "none" }}
+                                    icon={<FaLinkedin />}
+                                    aria-label="linkedin"
+                                    className="outlinecomputerfillbottom"
+                                    _focus={{ outline: "none" }}
+                                    bg={"transparent"}
+                                    border={"1px"}
+                                    borderColor={"purple.300"}
+                                    borderRadius={"full"}
+                                    _hover={{ bg: "purple.100" }}
+                                />
+
                                 <Button
+                                    display={{ base: "none", md: "flex" }}
                                     className="outlinecomputerfillbottom"
                                     _focus={{ outline: "none" }}
                                     leftIcon={<FaLinkedin />}
@@ -130,7 +141,6 @@ function Home() {
                                     borderRadius={"full"}
                                     minW={{ lg: "8rem" }}
                                     _hover={{ bg: "purple.100" }}
-                                    value={"PEDO"}
                                 >
                                     LinkedIn
                                 </Button>
@@ -141,7 +151,20 @@ function Home() {
                                 mt={"0 !important"}
                                 _hover={{ textDecor: "none" }}
                             >
+                                <IconButton
+                                    display={{ base: "flex", md: "none" }}
+                                    icon={<FaGithub />}
+                                    aria-label="linkedin"
+                                    className="outlinecomputerfillbottom"
+                                    _focus={{ outline: "none" }}
+                                    bg={"transparent"}
+                                    border={"1px"}
+                                    borderColor={"purple.300"}
+                                    borderRadius={"full"}
+                                    _hover={{ bg: "purple.100" }}
+                                />
                                 <Button
+                                    display={{ base: "none", md: "flex" }}
                                     className="outlinecomputerfillbottom"
                                     _focus={{ outline: "none" }}
                                     mt={"0 !important"}
@@ -162,7 +185,20 @@ function Home() {
                                 mt={"0 !important"}
                                 _hover={{ textDecor: "none" }}
                             >
+                                <IconButton
+                                    display={{ base: "flex", md: "none" }}
+                                    icon={<SiGmail />}
+                                    aria-label="linkedin"
+                                    className="outlinecomputerfillbottom"
+                                    _focus={{ outline: "none" }}
+                                    bg={"transparent"}
+                                    border={"1px"}
+                                    borderColor={"purple.300"}
+                                    borderRadius={"full"}
+                                    _hover={{ bg: "purple.100" }}
+                                />
                                 <Button
+                                    display={{ base: "none", md: "flex" }}
                                     className="outlinecomputerfillbottom"
                                     _focus={{ outline: "none" }}
                                     mt={"0 !important"}
