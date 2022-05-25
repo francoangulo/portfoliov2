@@ -135,6 +135,7 @@ function ProjectCard({ data }: { data: any }) {
                 </Box>
                 <Stack pt={10} align={"center"}>
                     <Heading
+                        as={"h3"}
                         fontSize={"2xl"}
                         fontFamily={"raleway"}
                         fontWeight={"bold"}

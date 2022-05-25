@@ -6,6 +6,7 @@ import {
     IconButton,
     Box,
     Button,
+    Heading,
 } from "@chakra-ui/react";
 import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
@@ -84,18 +85,20 @@ function Home() {
                         p={{ base: "22% 10%", md: "5.8% 15% 10% 15%" }}
                         justifyContent={"space-between"}
                     >
-                        <Text
+                        <Heading
+                            fontFamily={"raleway"}
                             userSelect={"none"}
                             flexDir={"row"}
                             fontSize={{ base: "xl", md: "4xl" }}
                             fontWeight={"bold"}
                             textAlign={"start"}
+                            as={"h1"}
                         >
                             {">"} Hey 👋 I'm Franco, <br />
                             <span style={{ color: "transparent" }}>{"> "}</span>
                             {text}
                             <Cursor />
-                        </Text>
+                        </Heading>
                         <Link
                             href="#about"
                             _hover={{ textDecor: "none" }}
