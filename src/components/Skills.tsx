@@ -105,26 +105,6 @@ function Skills() {
                 <SkillsSet skills={back} type="Backend" />
                 <SkillsSet skills={tools} type="Tools" />
             </Stack>
-            {/* <Image
-                userSelect={"none"}
-                src={skills}
-                position={"absolute"}
-                zIndex={-1}
-                w={"20%"}
-                bottom={20}
-                right={20}
-                opacity={0.5}
-            />
-            <Image
-                userSelect={"none"}
-                src={stripe}
-                position={"absolute"}
-                zIndex={-1}
-                w={"fit-content"}
-                top={"15%"}
-                left={0}
-                opacity={0.7}
-            /> */}
         </Stack>
     );
 }

@@ -45,6 +45,7 @@ function Projects() {
                         ))}
             </Stack>
             <Image
+                alt={"Background image"}
                 src={background}
                 w={{ base: "auto", lg: "fit-content" }}
                 h={{ base: "fit-content", lg: "auto" }}
@@ -54,6 +55,7 @@ function Projects() {
                 zIndex={-1}
             />
             <Image
+                alt={"Background image"}
                 src={background}
                 w={{ base: "auto", lg: "fit-content" }}
                 h={{ base: "fit-content", lg: "auto" }}

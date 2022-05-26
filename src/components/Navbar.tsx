@@ -25,7 +25,7 @@ function Navbar() {
                 left={10}
                 display={{ base: "none", md: "flex" }}
             >
-                <Image src={logo} w={"40px"} />
+                <Image src={logo} w={"40px"} h={"auto"} alt={"My brand logo"} />
             </Link>
             <Link
                 mt={"0 !important"}

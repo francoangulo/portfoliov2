@@ -51,6 +51,7 @@ function ProjectCard({ data }: { data: any }) {
                 >
                     <Box role={"group"} w={"fit-content"} h={"fit-content"}>
                         <Image
+                            alt={"Project image"}
                             rounded={"lg"}
                             height={210}
                             width={282}

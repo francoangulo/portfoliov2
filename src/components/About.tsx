@@ -38,6 +38,7 @@ function About() {
                             id="profileimage"
                             boxShadow={"2xl"}
                             src={profile}
+                            alt={"A picture of myself"}
                             h={{ lg: "100%" }}
                             w={{ sm: "80%", lg: "auto" }}
                             objectFit={"cover"}

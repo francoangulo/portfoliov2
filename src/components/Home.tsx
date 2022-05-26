@@ -62,7 +62,9 @@ function Home() {
                     <Image
                         display={{ base: "none", md: "flex" }}
                         src={computer}
+                        alt={"Picture of a computer"}
                         w={{ md: "fit-content", lg: "70vw" }}
+                        h={"auto"}
                         top={"0"}
                         left={"0"}
                         zIndex={0}
@@ -71,6 +73,7 @@ function Home() {
                         borderRadius={"10px"}
                         boxShadow={"xl"}
                         display={{ base: "flex", md: "none" }}
+                        alt={"Picture of a phone"}
                         src={phone}
                         h={"80vh"}
                         top={"0"}

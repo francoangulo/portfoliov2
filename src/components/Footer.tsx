@@ -16,8 +16,10 @@ function Footer() {
         >
             <Stack alignItems={"center"}>
                 <Image
+                    alt={"My brand logo"}
                     src={logo}
                     w={{ base: "10vw", md: "6vw", lg: "4.5vw" }}
+                    h={"auto"}
                 />
                 <Text>© 2022 Franco Angulo ALL RIGHTS RESERVED</Text>
             </Stack>

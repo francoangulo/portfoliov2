@@ -98,7 +98,9 @@ function SkillsSet({ skills, type }: { skills: any; type: string }) {
                             >
                                 <Image
                                     src={tool.logo}
+                                    alt={"Skill logo"}
                                     w={{ base: "35px", lg: "50px" }}
+                                    h={"auto"}
                                     borderRadius={"10%"}
                                 />
                             </Box>
