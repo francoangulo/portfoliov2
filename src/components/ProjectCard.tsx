@@ -24,6 +24,7 @@ function ProjectCard({ data }: { data: any }) {
                 rounded={"lg"}
                 pos={"relative"}
                 zIndex={1}
+                h={"100%"}
             >
                 <Box
                     rounded={"lg"}
@@ -133,7 +134,7 @@ function ProjectCard({ data }: { data: any }) {
                         </Box>
                     </Box>
                 </Box>
-                <Stack pt={10} align={"center"}>
+                <Stack pt={10} alignItems={"center"}>
                     <Heading
                         as={"h3"}
                         fontSize={"2xl"}
