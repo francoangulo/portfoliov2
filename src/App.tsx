@@ -8,19 +8,21 @@ import Skills from "./components/Skills";
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { CodePieces } from "./components/CodePieces";
 
 function App() {
-    return (
-        <Stack className="App" fontFamily={"raleway"}>
-            <Navbar />
-            <Home />
-            <About data-aos="fade-up" />
-            <Projects />
-            <Skills />
-            <Contact />
-            <Footer />
-        </Stack>
-    );
+  return (
+    <Stack className="App" fontFamily={"raleway"}>
+      <Navbar />
+      <Home />
+      <About data-aos="fade-up" />
+      <Projects />
+      <Skills />
+      <CodePieces />
+      <Contact />
+      <Footer />
+    </Stack>
+  );
 }
 
 export default App;
