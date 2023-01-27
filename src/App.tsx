@@ -1,16 +1,16 @@
-import { Stack, Text } from "@chakra-ui/react";
+import { Stack } from "@chakra-ui/react";
 import "./App.css";
-import About from "./components/About";
-import Home from "./components/Home";
+import About from "./components/portfolio/About";
+import Home from "./components/portfolio/Home";
 import "animate.css";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import Navbar from "./components/Navbar";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import { CodePieces } from "./components/CodePieces";
+import Projects from "./components/portfolio/Projects";
+import Skills from "./components/portfolio/Skills";
+import Navbar from "./components/portfolio/Navbar";
+import Contact from "./components/portfolio/Contact";
+import Footer from "./components/portfolio/Footer";
+import { CodePieces } from "./components/portfolio/CodePieces";
 
-function App() {
+const App = () => {
   return (
     <Stack className="App" fontFamily={"raleway"}>
       <Navbar />
@@ -23,6 +23,6 @@ function App() {
       <Footer />
     </Stack>
   );
-}
+};
 
 export default App;

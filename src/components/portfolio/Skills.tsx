@@ -1,19 +1,19 @@
 import { Stack } from "@chakra-ui/react";
 import SectionTitle from "./SectionTitle";
-import javascript from "../assets/skills/javascript.png";
-import typescript from "../assets/skills/typescript.png";
-import react from "../assets/skills/react.png";
-import redux from "../assets/skills/redux.png";
-import chakra from "../assets/skills/chakra.svg";
-import node from "../assets/skills/node.png";
-import express from "../assets/skills/express.svg";
-import sql from "../assets/skills/sql.png";
-import postgresql from "../assets/skills/postgresql.png";
-import sequelize from "../assets/skills/sequelize.png";
-import prisma from "../assets/skills/prisma.png";
-import git from "../assets/skills/git.png";
-import figma from "../assets/skills/figma.png";
-import mongodb from "../assets/skills/mongodb.png";
+import javascript from "../../assets/skills/javascript.png";
+import typescript from "../../assets/skills/typescript.png";
+import react from "../../assets/skills/react.png";
+import redux from "../../assets/skills/redux.png";
+import chakra from "../../assets/skills/chakra.svg";
+import node from "../../assets/skills/node.png";
+import express from "../../assets/skills/express.svg";
+import sql from "../../assets/skills/sql.png";
+import postgresql from "../../assets/skills/postgresql.png";
+import sequelize from "../../assets/skills/sequelize.png";
+import prisma from "../../assets/skills/prisma.png";
+import git from "../../assets/skills/git.png";
+import figma from "../../assets/skills/figma.png";
+import mongodb from "../../assets/skills/mongodb.png";
 import { SkillCard } from "./SkillCard";
 
 const Skills = () => {

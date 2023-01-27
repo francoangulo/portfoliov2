@@ -40,3 +40,38 @@
 button {
   font-size: calc(10px + 2vmin);
 }
+
+.go-back-button {
+  display: flex;
+  column-gap: 2%;
+}
+.nav {
+  padding: 4px 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-active {
+  background-color: #e9d8fd;
+}
+
+.code {
+  background-color: #ececf0;
+  border-radius: 5px;
+  width: 100%;
+  padding: 32px;
+  color: #b83280;
+}
+
+.code-piece-wrapper {
+  padding: 64px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6%;
+}
+
+.tinted-image {
+  filter: brightness(0) saturate(100%) invert(75%) sepia(49%) saturate(414%)
+    hue-rotate(353deg) brightness(88%) contrast(89%);
+}
